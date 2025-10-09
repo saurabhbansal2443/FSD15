@@ -2,29 +2,12 @@ import java.util.*;
 
 public class InputIn {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the user name ");
+        // int n = sc.nextInt();
 
-        String name = sc.next();
+        String str = sc.next();
 
-        System.out.println("Enter the age of user ");
-
-        int age = sc.nextInt();
-
-        System.out.println("Enter the gender of user ");
-
-        char ch = sc.next().charAt(0);
-
-        System.out.println("Enter the double input");
-
-        double db = sc.nextDouble();
-
-        System.out.println("The name of the user is " + name);
-        System.out.println("User age is " + age);
-        System.out.println("Gender is " + ch);
-        System.out.println("doubl e  " + db);
-
+        System.out.println(str);
     }
 }
