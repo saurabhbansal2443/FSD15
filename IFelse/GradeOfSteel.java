@@ -41,7 +41,6 @@ public class GradeOfSteel {
 
         // Best way to do these type of problems
 
-        System.out.println(a>b);
 
         boolean condition1 = hardness > 50;
         boolean condition2 = carbon < 0.7;
