@@ -2,19 +2,19 @@ package Array;
 
 public class Basics {
     public static void main(String[] args) {
-        int[] arr = { 1, 8, 4, 3, 21, 9 };
-        int[] arr2 = new int[9];
+        int[] arr = new int[5]; // [0,0,0,0,0]
+        int[] arr2 = { 1, 2, 3, 4, 5 };
 
-        int length = arr.length;
+        int length2 = arr2.length;
 
-        // System.out.println(length);
+        int ele = arr2[3];
+        arr2[2] = 99;
 
-        // System.out.println(arr);
-
-        arr[4] = 7 ; 
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i] + " ");
         }
+
+        // System.out.println(arr[2]);
+
     }
 }
