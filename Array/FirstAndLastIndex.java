@@ -11,8 +11,24 @@ public class FirstAndLastIndex {
         int FirstIndex = findFirstIndex(arr, ele);
         int SecondIndex = findLastIndex(arr, ele);
 
-        
+    }
 
+    public static int[] findFirstAndLAstIndex(int[] arr, int target) {
+        int fi = -1;
+        int li = -1;
+        boolean flag = true;
+        for (int i = 0; i < arr.length; i++) {
+            int ele = arr[i];
+            if (flag == true && target == ele) {
+                li = i;
+                fi = i;
+                flag = false;
+            } else if (target == ele) {
+                li = i;
+            }
+        }
+        int[] ans = { fi, li };
+        return ans;
     }
 
     public static int findFirstIndex(int[] arr, int target) {
