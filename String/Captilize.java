@@ -5,21 +5,48 @@ public class Captilize {
         String str = "  Java is the world ";
 
         str = str.trim();
+
+        // String ans = "";
+
+        // char fc = str.charAt(0);
+        // if (fc >= 'a' && fc <= 'z') {
+        // fc = (char) (fc - 'a' + 'A');
+        // }
+        // ans += fc;
+
+        // for (int i = 1; i < str.length(); i++) {
+
+        // char pre = str.charAt(i - 1);
+        // char curr = str.charAt(i);
+
+        // if (pre == ' ' && curr >= 'a' && curr <= 'z') {
+        // curr = (char) (curr - 'a' + 'A');
+        // }
+        // ans += curr;
+        // }
+
+        // System.out.println(ans);
+
+        StringBuilder sb = new StringBuilder();
+
         char fc = str.charAt(0);
         if (fc >= 'a' && fc <= 'z') {
             fc = (char) (fc - 'a' + 'A');
         }
-        String ans = fc + "";
+        sb.append(fc);
 
         for (int i = 1; i < str.length(); i++) {
-            char curr = str.charAt(i);
-            char pre = str.charAt(i - 1);
 
-            if (pre == ' ' && curr != ' ' && curr >= 'a' && curr <= 'z') {
+            char pre = str.charAt(i - 1);
+            char curr = str.charAt(i);
+
+            if (pre == ' ' && curr >= 'a' && curr <= 'z') {
                 curr = (char) (curr - 'a' + 'A');
             }
-            ans += curr;
+            sb.append(curr);
         }
+
+        System.out.println(sb);
 
     }
 }
