@@ -21,7 +21,7 @@ class LinkedList {
         this.size = 0;
     }
 
-    public static void addFirst(int val) {
+    public  void addFirst(int val) {
         Node n = new Node(val);
 
         if (head == null) { // size is 0 and the list is empty
@@ -36,7 +36,7 @@ class LinkedList {
         }
     }
 
-    public static void addLast(int val) {
+    public  void addLast(int val) {
         Node n = new Node(val);
 
         if (head == null) { // size is 0 and the list is empty
