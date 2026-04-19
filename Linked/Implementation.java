@@ -1,5 +1,4 @@
 
-
 class Node {
     int data;
     Node next;
@@ -82,68 +81,68 @@ class LinkedList {
             ptr = ptr.next;
         }
     }
-    
-    public int getFirst(){
-        if(head == null ){
-            return -1 ; 
-        }else{
-            return head.data ; 
+
+    public int getFirst() {
+        if (head == null) {
+            return -1;
+        } else {
+            return head.data;
         }
     }
-      public int getLast(){
-        if(tail == null ){
-            return -1 ; 
-        }else{
-            return tail.data ; 
+
+    public int getLast() {
+        if (tail == null) {
+            return -1;
+        } else {
+            return tail.data;
         }
     }
-    
-      public int getAtIndex(int idx){
-          if( idx <0 || idx >= size ){
-              return -1 ; 
-          }
-        else if(idx == 0 ){
-            return getFirst(); 
-        }else if (idx == size-1 ){
-             return getLast(); 
-        }else{
-            Node ptr = this.head ; 
-            while(idx > 0 ){
-                ptr = ptr.next ; 
-                idx--; 
+
+    public int getAtIndex(int idx) {
+        if (idx < 0 || idx >= size) {
+            return -1;
+        } else if (idx == 0) {
+            return getFirst();
+        } else if (idx == size - 1) {
+            return getLast();
+        } else {
+            Node ptr = this.head;
+            while (idx > 0) {
+                ptr = ptr.next;
+                idx--;
             }
-            
-            return ptr.data ; 
+
+            return ptr.data;
         }
     }
-    
-    public int removeFirst(){
-        if(this.head == null ){
-            return -1 ; 
-        }else{
-            int data = this.head.data ; 
-            this.head = this.head.next ; 
-            this.size--; 
-            return data; 
+
+    public int removeFirst() {
+        if (this.head == null) {
+            return -1;
+        } else {
+            int data = this.head.data;
+            this.head = this.head.next;
+            this.size--;
+            return data;
         }
     }
-    
-    public int removeLast(){
-         if(this.head == null ){
-            return -1 ; 
-        }else{
-           Node ptr = this.head ; 
-           while(ptr.next != this.tail ){
-                ptr = ptr.next ;   
-           }
-           int data = this.tail.data ; 
-           ptr.next = null ; 
-           this.tail = ptr ; 
-           this.size-- ; 
-           return data ; 
+
+    public int removeLast() {
+        if (this.head == null) {
+            return -1;
+        } else {
+            Node ptr = this.head;
+            while (ptr.next != this.tail) {
+                ptr = ptr.next;
+            }
+            int data = this.tail.data;
+            ptr.next = null;
+            this.tail = ptr;
+            this.size--;
+            return data;
         }
     }
-    
+
     public int removeAtIndex(int idx ){
         if(idx< 0 && idx>= size ){
             return -1 ; 
@@ -165,18 +164,17 @@ class LinkedList {
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList(); 
+        LinkedList list = new LinkedList();
 
         list.addFirst(10);
         list.addFirst(20);
         list.addLast(30);
-        list.addAtIndex(99,1); 
+        list.addAtIndex(99, 1);
 
         list.print();
     }
 }
 
-
 class Node {
     int data;
     Node next;
@@ -259,68 +257,68 @@ class LinkedList {
             ptr = ptr.next;
         }
     }
-    
-    public int getFirst(){
-        if(head == null ){
-            return -1 ; 
-        }else{
-            return head.data ; 
+
+    public int getFirst() {
+        if (head == null) {
+            return -1;
+        } else {
+            return head.data;
         }
     }
-      public int getLast(){
-        if(tail == null ){
-            return -1 ; 
-        }else{
-            return tail.data ; 
+
+    public int getLast() {
+        if (tail == null) {
+            return -1;
+        } else {
+            return tail.data;
         }
     }
-    
-      public int getAtIndex(int idx){
-          if( idx <0 || idx >= size ){
-              return -1 ; 
-          }
-        else if(idx == 0 ){
-            return getFirst(); 
-        }else if (idx == size-1 ){
-             return getLast(); 
-        }else{
-            Node ptr = this.head ; 
-            while(idx > 0 ){
-                ptr = ptr.next ; 
-                idx--; 
+
+    public int getAtIndex(int idx) {
+        if (idx < 0 || idx >= size) {
+            return -1;
+        } else if (idx == 0) {
+            return getFirst();
+        } else if (idx == size - 1) {
+            return getLast();
+        } else {
+            Node ptr = this.head;
+            while (idx > 0) {
+                ptr = ptr.next;
+                idx--;
             }
-            
-            return ptr.data ; 
+
+            return ptr.data;
         }
     }
-    
-    public int removeFirst(){
-        if(this.head == null ){
-            return -1 ; 
-        }else{
-            int data = this.head.data ; 
-            this.head = this.head.next ; 
-            this.size--; 
-            return data; 
+
+    public int removeFirst() {
+        if (this.head == null) {
+            return -1;
+        } else {
+            int data = this.head.data;
+            this.head = this.head.next;
+            this.size--;
+            return data;
         }
     }
-    
-    public int removeLast(){
-         if(this.head == null ){
-            return -1 ; 
-        }else{
-           Node ptr = this.head ; 
-           while(ptr.next != this.tail ){
-                ptr = ptr.next ;   
-           }
-           int data = this.tail.data ; 
-           ptr.next = null ; 
-           this.tail = ptr ; 
-           this.size-- ; 
-           return data ; 
+
+    public int removeLast() {
+        if (this.head == null) {
+            return -1;
+        } else {
+            Node ptr = this.head;
+            while (ptr.next != this.tail) {
+                ptr = ptr.next;
+            }
+            int data = this.tail.data;
+            ptr.next = null;
+            this.tail = ptr;
+            this.size--;
+            return data;
         }
     }
-    
+
     public int removeAtIndex(int idx ){
         if(idx< 0 && idx>= size ){
             return -1 ; 
@@ -342,12 +340,12 @@ class LinkedList {
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList(); 
+        LinkedList list = new LinkedList();
 
         list.addFirst(10);
         list.addFirst(20);
         list.addLast(30);
-        list.addAtIndex(99,1); 
+        list.addAtIndex(99, 1);
 
         list.print();
     }

@@ -1,5 +1,6 @@
 
 package linked;
+
 class Node {
     int data;
     Node next;
@@ -86,12 +87,12 @@ class LinkedList {
 
 public class Implementation {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList(); 
+        LinkedList list = new LinkedList();
 
         list.addFirst(10);
         list.addFirst(20);
         list.addLast(30);
-        list.addAtIndex(99,1); 
+        list.addAtIndex(99, 1);
 
         list.print();
     }
