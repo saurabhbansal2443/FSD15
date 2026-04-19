@@ -1,3 +1,25 @@
 {
+  "java.project.sourcePaths": ["src", "Linked"],
+  "java.project.outputPath": "bin",
+  "java.import.generatesMetadataFileEntries": true,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home",
+      "default": true
+    }
+  ],
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "code-runner.executorMap": {
+    "java": "cd $workspaceRoot && javac -d bin -sourcepath src src/**/*.java && java -cp bin linked.Implementation"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
   "java.debug.settings.onBuildFailureProceed": true
 }

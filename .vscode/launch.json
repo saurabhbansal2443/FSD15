@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run linked.Implementation",
+            "request": "launch",
+            "mainClass": "linked.Implementation",
+            "projectName": "FSD 12 Coding Thinker",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "preLaunchTask": null
+        }
+    ]
+}

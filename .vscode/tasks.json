@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile All Java",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "cd \"${workspaceFolder}\" && javac -d bin -sourcepath src $(find src -name '*.java')"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": "$javac"
+        },
+        {
+            "label": "Compile and Run Implementation",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "cd \"${workspaceFolder}\" && javac -d bin -sourcepath src $(find src -name '*.java') && java -cp bin linked.Implementation"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": "$javac"
+        }
+    ]
+}
